@@ -6,7 +6,6 @@ import configureStore from './store/configureStore';
 import 'normalize.css/normalize.css';
 import './styles/style.scss';
 
-import { addExpense } from './actions/expenses';
 
 const store = configureStore();
 
