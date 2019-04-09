@@ -6,11 +6,11 @@ import selectExpenses from '../selectors/expenses';
 export const ExpenseList = (props) => {
     return (
         <div>
-            { props.expenses.map((expense) => {
+            { props.expenses.length > 0 ? props.expenses.map((expense) => {
                 return (
                     <ExpenseListItem key={ expense.id } { ...expense }/>
                 );
-            })}
+            }) : <p>No Expenses</p>}
         </div>
     );
 };
